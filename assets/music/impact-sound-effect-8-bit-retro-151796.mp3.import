@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/impact-sound-effect-8-bit-retro-151796.mp3-63aab24b1de60942e268060b4935218b.mp3str"
+
+[deps]
+
+source_file="res://assets/music/impact-sound-effect-8-bit-retro-151796.mp3"
+dest_files=[ "res://.import/impact-sound-effect-8-bit-retro-151796.mp3-63aab24b1de60942e268060b4935218b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

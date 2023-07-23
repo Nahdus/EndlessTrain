@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/countdown-sound-effect-8-bit-151797.mp3-ea61b3d4ea692a19926f545c615ac0d9.mp3str"
+
+[deps]
+
+source_file="res://assets/music/countdown-sound-effect-8-bit-151797.mp3"
+dest_files=[ "res://.import/countdown-sound-effect-8-bit-151797.mp3-ea61b3d4ea692a19926f545c615ac0d9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

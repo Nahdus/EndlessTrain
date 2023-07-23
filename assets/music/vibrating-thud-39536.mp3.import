@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/vibrating-thud-39536.mp3-7bb04748f3636cefef7ff1f302e799e8.mp3str"
+
+[deps]
+
+source_file="res://assets/music/vibrating-thud-39536.mp3"
+dest_files=[ "res://.import/vibrating-thud-39536.mp3-7bb04748f3636cefef7ff1f302e799e8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

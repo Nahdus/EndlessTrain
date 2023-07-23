@@ -1,0 +1,128 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://script/train_controller/train_control.gd" type="Script" id=1]
+[ext_resource path="res://assets/engine.png" type="Texture" id=2]
+[ext_resource path="res://assets/coach.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 15, 15 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 15, 15 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 15, 15 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 15, 15 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 15, 15 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 15, 15 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 15, 15 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 15, 15 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 15, 15 )
+
+[node name="train" type="Node2D"]
+position = Vector2( 192, 336 )
+z_index = -1
+script = ExtResource( 1 )
+
+[node name="engine" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="engine"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="engine/Area2D"]
+shape = SubResource( 6 )
+
+[node name="coach" type="Sprite" parent="."]
+position = Vector2( 0, 32 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="coach"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coach/Area2D"]
+shape = SubResource( 7 )
+
+[node name="coach2" type="Sprite" parent="."]
+position = Vector2( 0, 64 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="coach2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coach2/Area2D"]
+shape = SubResource( 8 )
+
+[node name="coach3" type="Sprite" parent="."]
+position = Vector2( 0, 96 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="coach3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coach3/Area2D"]
+shape = SubResource( 9 )
+
+[node name="coach4" type="Sprite" parent="."]
+position = Vector2( 0, 128 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="coach4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coach4/Area2D"]
+shape = SubResource( 10 )
+
+[node name="coach5" type="Sprite" parent="."]
+position = Vector2( 0, 160 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="coach5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coach5/Area2D"]
+shape = SubResource( 11 )
+
+[node name="coach6" type="Sprite" parent="."]
+position = Vector2( 0, 192 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="coach6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coach6/Area2D"]
+shape = SubResource( 12 )
+
+[node name="coach7" type="Sprite" parent="."]
+position = Vector2( 0, 224 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="coach7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coach7/Area2D"]
+shape = SubResource( 13 )
+
+[node name="coach8" type="Sprite" parent="."]
+position = Vector2( 0, 256 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="coach8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coach8/Area2D"]
+shape = SubResource( 14 )
+
+[connection signal="body_entered" from="engine/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="coach/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="coach2/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="coach3/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="coach4/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="coach5/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="coach6/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="coach7/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="coach8/Area2D" to="." method="_on_Area2D_body_entered"]
