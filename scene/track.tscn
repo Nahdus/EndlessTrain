@@ -53,7 +53,8 @@ one_shot = true
 
 [node name="tick" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
-volume_db = -13.983
-pitch_scale = 0.36
+volume_db = -35.039
+pitch_scale = 0.56
+mix_target = 2
 
 [connection signal="timeout" from="restart_timer" to="." method="_on_restart_timer_timeout"]

@@ -38,6 +38,7 @@ func add_score():
 
 func game_state_change(state):
 	if state=="game running":
+		randomize()
 		reset_beats()
 		scoreTracker.reset_score()
 		un_pause()
